@@ -20,7 +20,7 @@ public class DBCon {
 		ResultSet rs = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://127.3.175.2:3306/sivam","root","sivam");
+			con=DriverManager.getConnection("jdbc:mysql://127.3.175.2:3306/sivam","adminSU4sCUv","ihb-uiahj564");
 			Statement st = con.createStatement();
 			rs = st.executeQuery("select * from team");
 			String output="";
