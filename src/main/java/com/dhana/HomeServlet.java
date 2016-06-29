@@ -22,7 +22,10 @@ public class HomeServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		PrintWriter out = resp.getWriter();
+		DBCon con = new DBCon();
 		out.println("Sivasakthi - test");
+		out.println("Sivasakthi - test"+con.readData());
+		
 		out.flush();
 	}
 }
